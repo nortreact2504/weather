@@ -37,7 +37,7 @@ function WTDesktop() {
                     <LeftPane locations={locations} locationSelected={setSelectedLocation} />
                 </Col>
                 <Col xs={8}>
-                    <RightPane currentWeather={locations[selectedLocation].locationData} />
+                    <RightPane isLoading={isLoading}  currentWeather={locations[selectedLocation].locationData} />
                 </Col>
             </Row>
         </Container>
